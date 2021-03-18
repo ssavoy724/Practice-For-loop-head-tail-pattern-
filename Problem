@@ -1,0 +1,23 @@
+#Pyhton practice for Data Structures and Algo class
+mult_table = [
+    [1, 2, 3],
+    [2, 4, 6],
+    [3, 6, 9]
+]
+
+
+for row in mult_table:
+    for cell in row:
+        if cell == row[-1]:           
+            print(cell, end = '')
+        if cell != row[-1]:
+            print(cell, end=' | ')
+    print()
+    
+    
+    
+#This was the end goal for the problem
+
+#.   1 | 2 | 3
+#.   2 | 4 | 6
+#.   3 | 6 | 9
